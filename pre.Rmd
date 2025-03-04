@@ -2,7 +2,7 @@
 title: "Presentation"
 subtitle: "⚔<br/>with a"
 author: "Tuesday"
-institute: "RStudio, PBC"
+institute: "CASA, UCL"
 date: " (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
