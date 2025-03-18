@@ -1,18 +1,17 @@
 ---
-title: "Tackling Urban Heat in a Tropical Metropolis:"
-subtitle: "Singapore’s UHI Mitigation Approaches"
-institute: "CASA0023"
-author: "Borui Wang, Yidian Liu, Lingqiao Yang, Yundi Liu"
-date: "2025/3/17"
+title: "<span style='color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.8);'>Tackling Urban Heat in a Tropical Metropolis:</span>"
+subtitle: "<span style='color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.8);'>Singapore’s UHI Mitigation Approaches</span>"
+author: "<span style='color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.8);'>Borui Wang, Yidian Liu, Lingqiao Yang, Yundi Liu</span>"
+institute: "<span style='color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.8);'>CASA0023</span>"
+date: "<span style='color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.8);'>2025/3/17</span>"
 output:
   xaringan::moon_reader:
-    css: ["default", "default-fonts", "rladies-fonts", "xaringan-themer.css"]
+    css: ["default", "default-fonts", "rladies-fonts", "style.css"]
     lib_dir: libs
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-  
 ---
 
 class: background,center,middle
@@ -20,37 +19,45 @@ class: background,center,middle
 
 ---
 
-###Singapore suffers from the persistent Urban Heat Island effect, leading to rising health risks, soaring energy consumption, and worsening environmental degradation.
+##Singapore suffers from the persistent Urban Heat Island effect, leading to <span style="color:#FF5733;">rising health risks</span>, <span style="color:#FF5733;">soaring energy consumption</span>, and <span style="color:#FF5733;">worsening environmental degradation</span>.
+
 ```{r echo=FALSE, out.width='48%',fig.show='hold'}
 knitr::include_graphics('image_heat2.png')
 ```
 ```{r echo=FALSE, out.width='48%',fig.show='hold'}
-knitr::include_graphics('image_heat3.png')
+knitr::include_graphics('image_arup.png')
 ```
 
-<center>Image credit: [As Shell, Eni quit Niger Delta, state-backed report describes legacy of carnage](https://news.mongabay.com/2023/05/as-shell-eni-quit-niger-delta-state-backed-report-describes-legacy-of-carnage/)
+<center>Source: [Strategies for Cooling Singapore](https://www.research-collection.ethz.ch/handle/20.500.11850/258216) and [ARUP](https://www.arup.com/news/singapores-built-environment-traps-heat-in-surprising-places/) 
 
 ---
-#Location & Climate
-* Singapore is located near the <span style="color:#1C5FA3;">**equator**</span>  and experiences a <span style="color:#1C5FA3;">**tropical rainforest climate**</span>, with high temperatures and humidity year-round (typically 26-34°C). 
-* Due to its equatorial location, Singapore receives <span style="color:#1C5FA3;">**intense solar radiation**</span> throughout the year, making it inherently prone to <span style="color:#1C5FA3;">**high urban temperatures**</span>.
+# Location & Climate
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
 
+  <!-- 文本部分 -->
+  <div style="width: 55%; text-align: left;">
+    <p>Singapore is located near the <span style="color:#FF5733;"> equator </span> and experiences a <span style="color:#FF5733;"> tropical rainforest climate</span>, with high temperatures and humidity year-round (typically 26-34°C).</p>
+    <p>Due to its equatorial location, Singapore receives <span style="color:#FF5733;"> intense solar radiation </span> throughout the year, making it inherently prone to <span style="color:#FF5733;"> high urban temperatures</span>.</p>
+  </div>
 
-```{r echo=FALSE,out.width='60%',out.height=='35%',fig.align='center'}
-knitr::include_graphics('image_location.jpg')
-```
-<center>Source:[Wikipedia-The Niger Delta](https://en.wikipedia.org/wiki/Niger_Delta)
+  <!-- 图片部分 -->
+  <div style="width: 45%;">
+    <img src="image_locationpage.jpg" style="width: 100%; height: auto; display: block;"/>
+  </div>
+
+</div>
+
+<center>Source:[Mughal et al., 2020](https://www.sciencedirect.com/science/article/pii/S2212095520303333)
 ---
 #Problem statement
-* Studies indicate that urban temperatures in Singapore are 4-7°C higher than in rural areas, with the most significant UHI effects occurring at night.
+* Studies indicate that urban temperatures in Singapore are <span style="color:#FF5733;">4-7°C higher</span> than in rural areas, with the most significant UHI effects occurring at night.
 
-* The most affected areas include the CBD, Kallang-Geylang region, and industrial zones (Chatterjee et al., 2019).
+* The most affected areas include the *CBD, Kallang-Geylang region, and industrial zones* (Chatterjee et al., 2019).
 
-* Research also shows that nighttime surface temperatures in Singapore are higher than daytime temperatures due to heat retention by buildings and roads, which slowly release stored heat overnight (Wong & Chen, 2009).
+* Research also shows that night time surface temperatures in Singapore are higher than daytime temperatures due to <span style="color:#FF5733;">heat retention by buildings and roads, which slowly release stored heat overnight</span> (Wong & Chen, 2009).
 
-
-```{r echo=FALSE, out.width='45%',fig.align='center'}
-knitr::include_graphics('image_state.jpg')
+```{r echo=FALSE, out.width='60%',fig.align='center'}
+knitr::include_graphics('image_state.png')
 ```
-<center>Source:[Akinola S.,2020](https://www.sciencedirect.com/science/article/pii/S0269749120362333)
+<center>Source:[Cooling Singapore](https://ethambassadors.ethz.ch/2018/12/13/cooling-singapore-meets-new-york-city/)
 ---
