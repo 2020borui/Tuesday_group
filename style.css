@@ -80,4 +80,10 @@ body {
 /* Style the tab content */
 .tab-content {
   display: none;
-
+}
+/* Two-column layout */
+.left-column, .right-column {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+};
