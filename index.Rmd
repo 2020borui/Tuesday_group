@@ -15,6 +15,23 @@ output:
 ---
 
 class: background,center,middle
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(knitr)
+#remotes::install_github("ropensci/RefManageR")
+library(RefManageR)
+library(knitcitations)
+library(DiagrammeR)
+BibOptions(check.entries = FALSE,
+           bib.style = "authoryear",
+           cite.style = "authoryear",
+           style = "markdown",
+           hyperlink = TRUE,
+           dashed = FALSE,
+           no.print.fields=c("doi", "url", "urldate", "issn"))
+myBib <- ReadBib(here::here("references.bib"), check = FALSE)
+
+```
 #**Problem:context & background**
 
 ---
@@ -98,6 +115,11 @@ Studies show that for every 1°C increase, air conditioning energy consumption r
 ]
 
 ]
+
+---
+class: background,center,middle
+#**Policies**
+
 
 ---
 # Global Development Goals
@@ -247,3 +269,65 @@ Annual Urban Heat Mitigation Assessment and Long-Term Monitoring Strategies
 
 
 ---
+
+class: background,center,middle
+#**Data and Methods**
+
+---
+# Data
+![](data.png)
+---
+## Data Overview
+### Remote Sensing Data
+![](remote_data.png)
+[Source: USGS](https://earthexplorer.usgs.gov/)
+
+---
+### Distribution of Medical Service Facilities and Boundary Data
+![](medical_Service.png)
+---
+#Heat Vulnerability Assessment
+
+1. Calculate the mean values of NDVI and LST for each planning area.
+
+2. Normalize all indicators using <span style="color:#FF5733;"> Min-Max scaling</span>. For indicators negatively correlated with heat vulnerability (e.g., NDVI), use the transformed value (1 – NDVI').
+```{r echo=FALSE, fig.align='center',out.width='30%'}
+knitr::include_graphics("formula1.png")
+```
+
+3. Assume equal contribution of all variables to heat vulnerability (<span style="color:#FF5733;">all variables have equal weights</span>). Sum all normalized variables to obtain the Urban Heat Vulnerability (UHV) index.
+---
+# Visualization
+
+.pull-left[
+## Map 1
+#### Physical Heat Exposure Map (30 m)
+Illustrates the spatial distribution of urban heat exposure, effectively identifying high-risk areas (low vegetation cover, high-temperature zones).
+
+```{r echo=FALSE, fig.align='center',out.width='85%'}
+knitr::include_graphics("formula2.png")
+```
+]
+.pull-right[
+## Map 2
+#### Heat Vulnerability Map (planning area)
+Used to identify which areas exhibit higher heat vulnerability and thus require prioritized heat mitigation measures (e.g., increasing green spaces, improving ventilation corridors, limiting traffic volume, and pavement reconstruction).
+
+]
+---
+# Flowchart
+![](flowchart.png)
+---
+# Example of Result
+`r invisible(Citet(myBib, "philipp2020urban"))`
+
+```{r echo=FALSE, fig.align='center',out.width='85%'}
+knitr::include_graphics("example.png")
+```
+[Source: SEC](https://sec.ethz.ch/research/cs/research.htm)
+---
+#Reference
+```{r results='asis', echo=FALSE}
+
+PrintBibliography(myBib)
+```

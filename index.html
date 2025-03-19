@@ -4,12 +4,12 @@
     <title>Tackling Urban Heat in a Tropical Metropolis:</title>
     <meta charset="utf-8" />
     <meta name="author" content="Borui Wang, Yidian Liu, Lingqiao Yang, Yundi Liu" />
-    <script src="libs/header-attrs-2.29/header-attrs.js"></script>
-    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
-    <link href="libs/remark-css-0.0.1/rladies-fonts.css" rel="stylesheet" />
-    <link href="libs/panelset-0.3.0/panelset.css" rel="stylesheet" />
-    <script src="libs/panelset-0.3.0/panelset.js"></script>
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link href="libs/remark-css/rladies-fonts.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
@@ -36,6 +36,7 @@ class: center, middle, inverse, title-slide
 
 
 class: background,center,middle
+
 #**Problem:context &amp; background**
 
 ---
@@ -109,6 +110,11 @@ Studies show that for every 1°C increase, air conditioning energy consumption r
 ]
 
 ]
+
+---
+class: background,center,middle
+#**Policies**
+
 
 ---
 # Global Development Goals
@@ -252,6 +258,61 @@ Annual Urban Heat Mitigation Assessment and Long-Term Monitoring Strategies
 
 
 ---
+
+class: background,center,middle
+#**Data and Methods**
+
+---
+# Data
+![](data.png)
+---
+## Data Overview
+### Remote Sensing Data
+![](remote_data.png)
+[Source: USGS](https://earthexplorer.usgs.gov/)
+
+---
+### Distribution of Medical Service Facilities and Boundary Data
+![](medical_Service.png)
+---
+#Heat Vulnerability Assessment
+
+1. Calculate the mean values of NDVI and LST for each planning area.
+
+2. Normalize all indicators using &lt;span style="color:#FF5733;"&gt; Min-Max scaling&lt;/span&gt;. For indicators negatively correlated with heat vulnerability (e.g., NDVI), use the transformed value (1 – NDVI').
+&lt;img src="formula1.png" width="30%" style="display: block; margin: auto;" /&gt;
+
+3. Assume equal contribution of all variables to heat vulnerability (&lt;span style="color:#FF5733;"&gt;all variables have equal weights&lt;/span&gt;). Sum all normalized variables to obtain the Urban Heat Vulnerability (UHV) index.
+---
+# Visualization
+
+.pull-left[
+## Map 1
+#### Physical Heat Exposure Map (30 m)
+Illustrates the spatial distribution of urban heat exposure, effectively identifying high-risk areas (low vegetation cover, high-temperature zones).
+
+&lt;img src="formula2.png" width="85%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+## Map 2
+#### Heat Vulnerability Map (planning area)
+Used to identify which areas exhibit higher heat vulnerability and thus require prioritized heat mitigation measures (e.g., increasing green spaces, improving ventilation corridors, limiting traffic volume, and pavement reconstruction).
+
+]
+---
+# Flowchart
+![](flowchart.png)
+---
+# Example of Result
+
+
+&lt;img src="example.png" width="85%" style="display: block; margin: auto;" /&gt;
+[Source: SEC](https://sec.ethz.ch/research/cs/research.htm)
+---
+#Reference
+&lt;a name=bib-philipp2020urban&gt;&lt;/a&gt;[Philipp, C. H. and W. T.
+Chow](#cite-philipp2020urban) (2020). _Urban Heat Vulnerability
+Analysis for Singapore: D 2.4-Vulnerability Map_. ETH Zurich.
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
