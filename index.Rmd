@@ -284,7 +284,10 @@ class: background,center,middle
 
 ---
 ### Distribution of Medical Service Facilities and Boundary Data
-![](medical_service.png)
+```{r echo=FALSE, fig.align='center',out.width='90%'}
+knitr::include_graphics("medical_service.png")
+```
+
 ---
 #Heat Vulnerability Assessment
 
