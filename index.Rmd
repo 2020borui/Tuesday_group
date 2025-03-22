@@ -328,6 +328,24 @@ Used to identify which areas exhibit higher heat vulnerability and thus require 
 knitr::include_graphics("example.png")
 ```
 [Source: SEC](https://sec.ethz.ch/research/cs/research.htm)
+
+---
+class: inverse, center, middle
+# Timeline and Budget
+
+---
+# Project Timeline
+![](image_table1.png)
+
+--
+The project is scheduled to be completed over 9 months and consists of five phases: initiation, planning, execution, control, and closure. 
+
+Interventions include tree planting, green roof installation, developing bus-only lanes, building cycling infrastructure, creating car-free zones, and applying reflective coatings. A mid-term evaluation will be conducted to assess progress and make necessary adjustments to optimize outcomes.
+
+---
+# Projected Budget
+![](image_table2.png)
+
 ---
 #Reference
 ```{r results='asis', echo=FALSE}
