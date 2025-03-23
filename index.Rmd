@@ -342,8 +342,7 @@ class: inverse, center, middle
 --
 The project is scheduled to be completed over 9 months and consists of five phases: initiation, planning, execution, control, and closure. 
 
-Interventions include tree planting, green roof installation, developing bus-only lanes, building cycling infrastructure, creating car-free zones, and applying reflective coatings. A mid-term evaluation will be conducted to assess progress and make necessary adjustments to optimize outcomes.
-
+The interventions include tree planting, green roofs, bus-only lanes, cycling infrastructure, car-free zones, and reflective coatings. Public welfare measures will focus on community shade structures, drinking water stations, and subsidies for the elderly, low-income groups, and outdoor workers. A mid-term evaluation will assess progress and make necessary adjustments to optimize outcomes.
 ---
 # Projected Budget
 ![](image_table2.png)
