@@ -285,7 +285,7 @@ class: background,center,middle
 ```{r echo=FALSE, fig.align='center',out.width='90%'}
 knitr::include_graphics("medical_service.png")
 ```
-
+Source: [Data.gov.sg](https://data.gov.sg/datasets?query=Planning+Area+Boundary&page=1&resultId=d_4765db0e87b9c86336792efe8a1f7a66), [HDX](https://data.humdata.org/dataset/hotosm_sgp_health_facilities?force_layout=desktop)
 ---
 #Heat Vulnerability Assessment
 
@@ -317,7 +317,9 @@ Used to identify which areas exhibit higher heat vulnerability and thus require 
 ]
 ---
 # Flowchart
-![](flowchart.png)
+```{r echo=FALSE, fig.align='center',out.width='100%'}
+knitr::include_graphics("flowchart.png")
+```
 ---
 # Example of Result
 `r invisible(Citet(myBib, "philipp2020urban"))`
