@@ -273,7 +273,7 @@ class: background,center,middle
 
 ---
 # Data
-![](data.png)
+![](data_new.png)
 ---
 ## Data Overview
 ### Remote Sensing Data
