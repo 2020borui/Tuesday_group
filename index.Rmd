@@ -36,7 +36,7 @@ myBib <- ReadBib(here::here("references.bib"), check = FALSE)
 
 ---
 
-##Singapore suffers from the persistent Urban Heat Island effect, leading to <span style="color:#FF5733;">rising health risks</span>, <span style="color:#FF5733;">soaring energy consumption</span>, and <span style="color:#FF5733;">worsening environmental degradation</span>.
+##Singapore suffers from the persistent Urban Heat Island effect, leading to <span style="color:#FF5733;">rising health risks</span>, <span style="color:#FF5733;">higher energy demand</span>, and <span style="color:#FF5733;">accelerated environmental degradation</span>.
 
 ```{r echo=FALSE, out.width='48%',fig.show='hold'}
 knitr::include_graphics('image_heat2.png')
@@ -54,7 +54,7 @@ knitr::include_graphics('image_arup.png')
   <!-- 文本部分 -->
   <div style="width: 55%; text-align: left;">
     <p>Singapore is located near the <span style="color:#FF5733;"> equator </span> and experiences a <span style="color:#FF5733;"> tropical rainforest climate</span>, with high temperatures and humidity year-round (typically 26-34°C).</p>
-    <p>Due to its equatorial location, Singapore receives <span style="color:#FF5733;"> intense solar radiation </span> throughout the year, making it inherently prone to <span style="color:#FF5733;"> high urban temperatures</span>.</p>
+    <p>Due to its equatorial location, Singapore receives <span style="color:#FF5733;"> intense solar radiation </span> throughout the year, making it have <span style="color:#FF5733;">naturally high urban temperatures</span>.</p>
   </div>
 
   <!-- 图片部分 -->
@@ -67,11 +67,9 @@ knitr::include_graphics('image_arup.png')
 <center>Source:[Mughal et al., 2020](https://www.sciencedirect.com/science/article/pii/S2212095520303333)
 ---
 #Problem statement
-* Studies indicate that urban temperatures in Singapore are <span style="color:#FF5733;">4-7°C higher</span> than in rural areas, with the most significant UHI effects occurring at night.
+* Studies indicate that <span style="color:#FF5733;">urban temperatures</span> in Singapore are <span style="color:#FF5733;">4-7°C higher</span> than in <span style="color:#FF5733;">rural areas</span>, with the most significant UHI effects occurring <span style="color:#FF5733;">at night</span>.
 
-* The most affected areas include the *CBD, Kallang-Geylang region, and industrial zones*.
-
-* Research also shows that night time surface temperatures in Singapore are higher than daytime temperatures due to <span style="color:#FF5733;">heat retention by buildings and roads, which slowly release stored heat overnight</span> (Wong & Chen, 2009).
+* Research also shows that night time surface temperatures in Singapore are higher than daytime temperatures due to <span style="color:#FF5733;">heat retention by buildings and roads, which slowly release stored heat overnight</span> (Cooling Singapore).
 
 ```{r echo=FALSE, out.width='60%',fig.align='center'}
 knitr::include_graphics('image_state.png')
@@ -343,7 +341,7 @@ The project is scheduled to be completed over 9 months and consists of five phas
 The interventions include tree planting, green roofs, bus-only lanes, cycling infrastructure, car-free zones, and reflective coatings. Public welfare measures will focus on community shade structures, drinking water stations, and subsidies for the elderly, low-income groups, and outdoor workers. A mid-term evaluation will assess progress and make necessary adjustments to optimize outcomes.
 ---
 # Projected Budget
-![](image_table2.png)
+<img src="image_table2.png" width="90%">
 ---
 
 
@@ -378,7 +376,24 @@ Mitigating urban heat and enhancing heat resilience requires coordinated, multi-
 Together, these strategies can effectively reduce urban temperatures, improve thermal comfort, and strengthen climate resilience, while also enhancing the city’s livability and sustainability.
 ---
 #Reference
-```{r results='asis', echo=FALSE}
 
-PrintBibliography(myBib)
-```
+Mughal, M. O., Li, X. X., & Norford, L. K. (2020). Urban heat island mitigation in Singapore: Evaluation using WRF/multilayer urban canopy model and local climate zones. *Urban Climate*, 34, 100714.
+
+Philipp, C. H. and W. T. Chow (2020). *Urban Heat Vulnerability Analysis for Singapore*: D 2.4-Vulnerability Map. ETH Zurich.
+
+Campbell, I. et al. (2021) Beating the heat: a sustainable cooling handbook for cities. Nairobi, Kenya: United Nations Environment Programme.
+
+City resilience framework - resilient cities network (no date). Available at: https://resilientcitiesnetwork.org/city-resilience-framework/
+
+Cooling singapore Singapore-eth Centre. Available at: https://sec.ethz.ch/research/cs.html
+
+Master plan 2019 (no date). Available at: https://www.ura.gov.sg/Corporate/Planning/Master-Plan/Master-Plan-2019 
+
+Sendai framework for disaster risk reduction 2015-2030 | UNDRR. Available at: https://www.undrr.org/publication/sendai-framework-disaster-risk-reduction-2015-2030
+---
+#Reference
+Ruefenacht, L. and Acero, J.A. (2017) Strategies for cooling singapore: a catalogue of 80+ measures to mitigate urban heat island and improve outdoor thermal comfort [application/pdf]. ETH Zurich, p. 95 p. Available at: https://doi.org/10.3929/ETHZ-B-000258216.
+
+Singapore green plan 2030. Available at: https://www.greenplan.gov.sg/ (Accessed: 24 March 2025).
+
+What is urban heat island effect | 5 way to reduce UHI effect (no date). Available at: https://www.civilengineeringweb.com/2022/07/urban-heat-island-effect.html 
